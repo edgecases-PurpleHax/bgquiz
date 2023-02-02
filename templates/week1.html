@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 1</title>
+</head>
+<body>
+<form action="{{ url_for('week1') }}" method="POST" role="form">
+    {% for question in quiz %}
+    <h2>{{ question.label }}</h2>
+    <div>
+        <br>
+        <div class="answer">
+            {{ question }}
+        </div>
+    </div>
+    {% endfor %}
+    <input type="submit" value="Submit" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---The answer for question 5 is C ---->
+</body>
+</html>
