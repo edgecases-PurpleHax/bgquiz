@@ -107,7 +107,9 @@ def week1():
                             ('D', '-oG')
                         ],
                         validators=[CorrectAnswer('D')])
-        q10 = RadioField("You are testing an application, and you notice that you can replace a number in the URL to access data you should not be able to see. What vulnerability are you most likely looking at?",
+        q10 = RadioField("You are testing an application, and you notice that you can replace a number in the URL to "
+                         "access data you should not be able to see. What vulnerability are you most likely looking "
+                         "at?",
                          choices=[
                              ('A', "Insecure Direct Object Referencing"),
                              ('B', 'Structured Query Language Injection'),
@@ -125,4 +127,5 @@ def week1():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=80, host="0.0.0.0")
+
